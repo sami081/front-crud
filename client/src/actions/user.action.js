@@ -6,7 +6,7 @@ export const DELETE_USER ="DELETE_USER";
 
 export const getUser = (uid) => {
   return (dispatch) => {
-    console.log(dispatch);
+   
     return axios
       .get(`${process.env.REACT_APP_API_URL}user/${uid}`)
       .then((res) => {
